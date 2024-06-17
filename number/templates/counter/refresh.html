@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Refresh Counter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #ff6f61;
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px #ffa07a;
+        }
+
+        h2 {
+            color: #4b0082;
+            font-size: 2em;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px #8a2be2;
+        }
+
+        h3 {
+            color: #2e8b57;
+            font-size: 1.5em;
+            text-shadow: 1px 1px #3cb371;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        h1, h2, h3 {
+            animation: fadeIn 2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <h1>This page has been refreshed {{ total_count }} times.</h1>
+    <h2>Today's date is {{ date }}.</h2>
+    <h3>This page has been refreshed {{ daily_count }} times today.</h3>
+</body>
+</html>
+
