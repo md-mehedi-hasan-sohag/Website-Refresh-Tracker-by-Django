@@ -5,7 +5,7 @@ class RefreshCounter(models.Model):
     total_count = models.IntegerField(default=0)
 
     def __str__(self):
-        return f"Refresh Count: {self.count}"
+        return f"Refresh Count: {self.total_count}"
     
 class DailyRefreshCounter(models.Model):
     date = models.DateField(default=timezone.now)
